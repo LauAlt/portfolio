@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap');
+
+$negro:#212121;
+$blanco:#ffffff;
+$amarillo:#faf670;
+$fuente:'Lato', sans-serif;
+$fuente2:'Kaushan Script', cursive;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: $fuente;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    background: $negro;
+}
+.header-container{
+    animation: enter 3s linear forwards;
+}
+@keyframes enter{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    p{
+        width: 30%;
+        animation: enterLeft 2s linear forwards;
+    }
+    @keyframes enterLeft{
+        0%{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-200px);
+        }
+    }
+    .photo{
+        img{
+            border-radius: 5px;
+        }
+        animation: enterRight 2s linear forwards;
+    }
+    @keyframes enterRight{
+        0%{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(200px);
+        }
+    }
+}
+.main{
+    opacity: 1;
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    margin: 50px 0;
+    animation: enterLine 2s linear forwards;
+}
+@keyframes enterLine{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-4000px);
+    }
+}
+
+footer{
+    animation: fromthefloor 2s linear forwards;
+}
+@keyframes fromthefloor{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(400px);
+    }
+}

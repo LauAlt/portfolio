@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #212121;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  margin: 80px 0;
+  background: #212121;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+header .header-container {
+  width: 200px;
+  max-width: 200px;
+  position: absolute;
+  left: calc(50% -60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-container img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+header .header-container p {
+  margin-left: 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+header img:hover,
+header img:focus,
+header img:active {
+  background: #faf670;
+  border-radius: 50%;
+}
+
+header p:hover,
+header p:focus,
+header p:active {
+  color: #faf670;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.main {
+  background-color: white;
+  height: 1px;
+  width: 100%;
+  margin: 50px 0;
+  -webkit-animation: enterLine 2s linear forwards;
+          animation: enterLine 2s linear forwards;
+}
+
+@-webkit-keyframes enterLine {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-4000px);
+            transform: translateX(-4000px);
+  }
+}
+
+@keyframes enterLine {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-4000px);
+            transform: translateX(-4000px);
+  }
+}
+
+h1 {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+
+.project {
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project h2 {
+  margin: 20px;
+  color: #faf670;
+}
+
+.project .description, .project .metodologies {
+  margin: 10px 0;
+}
+
+.project .link-container {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 50px 0;
+}
+
+.project .link-container p {
+  margin: 20px 0;
+  -webkit-animation: sidetoside 2s linear forwards;
+          animation: sidetoside 2s linear forwards;
+}
+
+@-webkit-keyframes sidetoside {
+  0% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+}
+
+@keyframes sidetoside {
+  0% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+}
+
+.project .link-container p:hover {
+  color: #faf670;
+}
+
+.project .tumbnail {
+  overflow: hidden;
+}
+
+.project .tumbnail img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+.project .tumbnail img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.project .github {
+  margin: 50px 16px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s ease-in;
+  transition: -webkit-transform .2s ease-in;
+  transition: transform .2s ease-in;
+  transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+}
+
+.project .github:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=frontend.css.map */

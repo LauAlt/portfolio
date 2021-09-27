@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap');
+
+$negro:#212121;
+$blanco:#ffffff;
+$amarillo:#faf670;
+$fuente:'Lato', sans-serif;
+$fuente2:'Kaushan Script', cursive;
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: $fuente;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    background: $negro;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    height:auto;
+    margin: 80px 0;
+    background: $negro;
+    display:grid;
+    place-items: center ;
+    .header-container{
+        width: 200px;
+        max-width: 200px;
+        position: absolute;
+        left: calc(50% -60px);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        img{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: .3s ease-in;
+        }
+        p{
+            margin-left: 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 1.2rem;
+            letter-spacing: 2px;
+            font-family: $fuente;
+            color: $blanco;
+            transition: transform .3s ease-in;
+        }
+    }
+}
+header img:hover, 
+header img:focus, 
+header img:active{
+    background: $amarillo;
+    border-radius: 50%;
+}
+header p:hover, 
+header p:focus, 
+header p:active{
+    color: $amarillo;
+    transform: scale(0.9);
+}
+
+main{
+    width: 100%;
+    min-width: 320;
+    height: auto;
+    margin: 0 0 40px 0;
+    background: $negro;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $blanco;
+    p{
+        width: 320px;
+        min-width: 320px;
+        padding:   40px 10px;
+        text-align: left;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+        .resaltado{
+            background:$amarillo;
+            color: $negro;
+            font-size: 1.6rem;
+        }
+        .figma, .sass{
+            width: 40px;
+            height: 10px;
+        }
+    }
+    .photo{
+        text-align: center;
+
+        img{
+            position: relative;
+            object-fit: contain;
+            width:320px;
+            min-width: 320px;
+            max-width: 938px;
+        }
+    }
+}
+
+.main{
+    opacity: 0;
+}
+
+    
+nav{
+    width: 100%;
+    margin: 0 0 40px 0;
+    background: $negro;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .ux,.frontend{
+            padding: 6px 0;
+            text-align: center;
+            width: 120px;
+            min-width: 80px;
+            border: solid 1px $blanco;
+            background: transparent;
+            color: $blanco;
+            height: 30px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 1.8rem;
+            letter-spacing: 2px;
+            cursor:pointer;
+            transition: transform .2s ease-in;
+            a{
+                text-decoration: none;
+                color: $blanco;
+            }
+        }
+    }
+}
+.ux:hover, .ux:focus, .ux:active,
+.frontend:hover, .frontend:focus, .frontend:active{
+    background: $amarillo;
+    transform: scale(1.2);
+    border: none;
+    a{
+        color: $negro;
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .rrss{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .github, .bh, .linkedin, .codepen{
+            margin:20px 16px ;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transition: transform .2s ease-in;
+        }
+    }
+    img{
+        margin: 20px 0;
+        width: 36px;
+        height: 36px;
+    }
+    p{ 
+        width: 100%;
+        text-align: center;
+        color: $blanco;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+.github:hover, .github:focus, .github:active, 
+.bh:hover, .bh:focus, .bh:active,
+.linkedin:hover, .linkedin:focus, .linkedin:active,
+.codepen:hover, .codepen:focus, .codepen:active{
+    transform: scale(1.2);
+}
