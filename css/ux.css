@@ -205,4 +205,69 @@ h1 {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .rrss {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .rrss .github, footer .rrss .bh, footer .rrss .linkedin, footer .rrss .codepen {
+  margin: 20px 16px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s ease-in;
+  transition: -webkit-transform .2s ease-in;
+  transition: transform .2s ease-in;
+  transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+}
+
+footer img {
+  margin: 20px 0;
+  width: 36px;
+  height: 36px;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.github:hover, .github:focus, .github:active,
+.bh:hover, .bh:focus, .bh:active,
+.linkedin:hover, .linkedin:focus, .linkedin:active,
+.codepen:hover, .codepen:focus, .codepen:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 /*# sourceMappingURL=ux.css.map */
