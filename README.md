@@ -1,1 +1,1 @@
-#<img src="https://i.ibb.co/NY4jVsz/muestra-portfolio-lau.png" alt="muestra-portfolio-lau" border="0">
+<img src="https://i.ibb.co/NY4jVsz/muestra-portfolio-lau.png" alt="muestra-portfolio-lau" border="0">
