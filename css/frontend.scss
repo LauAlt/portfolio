@@ -1,34 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap');
-
-$negro:#212121;
-$blanco:#ffffff;
-$amarillo:#faf670;
-$fuente:'Lato', sans-serif;
-$fuente2:'Kaushan Script', cursive;
+@import "_setup.scss";
+@import "_footer.scss";
 
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-    font-family: $fuente;
-}
-::-webkit-scrollbar{
-    display: none;
-}
-body{
-    a{
-        text-decoration: none;
-    }
-    li{
-        list-style: none;
-    }
-    background: $negro;
-}
 header{
     width: 100%;
     min-width: 320px;
@@ -38,8 +12,8 @@ header{
     display:grid;
     place-items: center ;
     .header-container{
-        width: 200px;
-        max-width: 200px;
+        width: 300px;
+        max-width: 300px;
         position: absolute;
         left: calc(50% -60px);
         display: flex;
@@ -165,46 +139,46 @@ h1{
             transform: scale(1.2);
     }
 }
-footer{
-    width: 100%;
-    height: auto;
-    margin: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .rrss{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .github, .bh, .linkedin, .codepen{
-            margin:20px 16px ;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-            transition: transform .2s ease-in;
-        }
-    }
-    img{
-        margin: 20px 0;
-        width: 36px;
-        height: 36px;
-    }
-    p{ 
-        width: 100%;
-        text-align: center;
-        color: $blanco;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        line-height: 1.8rem;
-        letter-spacing: 2px;
-    }
-}
+// footer{
+//     width: 100%;
+//     height: auto;
+//     margin: 40px 0;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     .rrss{
+//         width: 100%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         .github, .bh, .linkedin, .codepen{
+//             margin:20px 16px ;
+//             width: 20px;
+//             height: 20px;
+//             cursor: pointer;
+//             transition: transform .2s ease-in;
+//         }
+//     }
+//     img{
+//         margin: 20px 0;
+//         width: 36px;
+//         height: 36px;
+//     }
+//     p{ 
+//         width: 100%;
+//         text-align: center;
+//         color: $blanco;
+//         font-size: 1rem;
+//         text-transform: uppercase;
+//         font-weight: 500;
+//         line-height: 1.8rem;
+//         letter-spacing: 2px;
+//     }
+// }
 
-.github:hover, .github:focus, .github:active, 
-.bh:hover, .bh:focus, .bh:active,
-.linkedin:hover, .linkedin:focus, .linkedin:active,
-.codepen:hover, .codepen:focus, .codepen:active{
-    transform: scale(1.2);
-}
+// .github:hover, .github:focus, .github:active, 
+// .bh:hover, .bh:focus, .bh:active,
+// .linkedin:hover, .linkedin:focus, .linkedin:active,
+// .codepen:hover, .codepen:focus, .codepen:active{
+//     transform: scale(1.2);
+// }

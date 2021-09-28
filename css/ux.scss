@@ -38,8 +38,8 @@ header{
     display:grid;
     place-items: center ;
     .header-container{
-        width: 200px;
-        max-width: 200px;
+        width: 300px;
+        max-width: 300px;
         position: absolute;
         left: calc(50% -60px);
         display: flex;
@@ -154,7 +154,22 @@ h1{
             transform: scale(1.2);
         }
     }
+    h3{
+        font-size: .8rem;
+        font-weight: lighter;
+        margin: 20px 0 0 0;
+    }
+    iframe{
+        margin: 20px 0;
+        width:50%;
+        height:50vh;
+        border: none;
+        border-radius: 20px;
+    }
 }
+
+
+
 footer{
     width: 100%;
     height: auto;

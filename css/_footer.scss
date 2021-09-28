@@ -1,0 +1,43 @@
+footer{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .rrss{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .github, .bh, .linkedin, .codepen{
+            margin:20px 16px ;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transition: transform .2s ease-in;
+        }
+    }
+    img{
+        margin: 20px 0;
+        width: 36px;
+        height: 36px;
+    }
+    p{ 
+        width: 100%;
+        text-align: center;
+        color: $blanco;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+.github:hover, .github:focus, .github:active, 
+.bh:hover, .bh:focus, .bh:active,
+.linkedin:hover, .linkedin:focus, .linkedin:active,
+.codepen:hover, .codepen:focus, .codepen:active{
+    transform: scale(1.2);
+}

@@ -1,0 +1,46 @@
+main{
+    width: 100%;
+    min-width: 320;
+    height: auto;
+    margin: 0 0 40px 0;
+    background: $negro;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $blanco;
+    p{
+        width: 320px;
+        min-width: 320px;
+        padding:   40px 10px;
+        text-align: left;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+        .resaltado{
+            background:$amarillo;
+            color: $negro;
+            font-size: 1.6rem;
+        }
+        .figma, .sass{
+            width: 40px;
+            height: 10px;
+        }
+    }
+    .photo{
+        text-align: center;
+
+        img{
+            position: relative;
+            object-fit: contain;
+            width:320px;
+            min-width: 320px;
+            max-width: 938px;
+        }
+    }
+}
+
+.main{
+    opacity: 0;
+}

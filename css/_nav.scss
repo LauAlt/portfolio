@@ -1,0 +1,40 @@
+nav{
+    width: 100%;
+    margin: 0 0 40px 0;
+    background: $negro;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .ux,.frontend{
+            padding: 6px 0;
+            text-align: center;
+            width: 120px;
+            min-width: 80px;
+            border: solid 1px $blanco;
+            background: transparent;
+            color: $blanco;
+            height: 30px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 1.8rem;
+            letter-spacing: 2px;
+            cursor:pointer;
+            transition: transform .2s ease-in;
+            a{
+                text-decoration: none;
+                color: $blanco;
+            }
+        }
+    }
+}
+.ux:hover, .ux:focus, .ux:active,
+.frontend:hover, .frontend:focus, .frontend:active{
+    background: $amarillo;
+    transform: scale(1.2);
+    border: none;
+    a{
+        color: $negro;
+    }
+}
