@@ -1,5 +1,5 @@
 $negro:#212121;
-$blanco:#ffffff;
+$blanco:#ffffffb1;
 $amarillo:#faf670;
 $fuente:'Lato', sans-serif;
 $fuente2:'Kaushan Script', cursive;
@@ -24,4 +24,7 @@ body{
         list-style: none;
     }
     background: $negro;
+}
+h1, h2, h3, p{
+    letter-spacing: 4px;
 }

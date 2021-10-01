@@ -85,7 +85,7 @@ h1{
     text-transform: uppercase;
     font-weight: 500;
     line-height: 1.2rem;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-family: $fuente;
     color: $blanco;
     padding: 10px;
@@ -97,7 +97,7 @@ h1{
         
     }
     .description, .metodologies{
-        margin: 10px 0;
+        margin: 10px 20px;
     }
     .link-container{
         width: 100%;

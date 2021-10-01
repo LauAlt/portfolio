@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap');
+@import "_setup.scss";
+@import "_footer.scss";
 
 $negro:#212121;
 $blanco:#ffffff;
@@ -8,27 +10,6 @@ $fuente2:'Kaushan Script', cursive;
 
 
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-    font-family: $fuente;
-}
-::-webkit-scrollbar{
-    display: none;
-}
-body{
-    a{
-        text-decoration: none;
-    }
-    li{
-        list-style: none;
-    }
-    background: $negro;
-}
 header{
     width: 100%;
     min-width: 320px;
@@ -111,7 +92,7 @@ h1{
     text-transform: uppercase;
     font-weight: 500;
     line-height: 1.2rem;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-family: $fuente;
     color: $blanco;
     padding: 10px;
@@ -123,7 +104,7 @@ h1{
         
     }
     .description, .metodologies{
-        margin: 10px 0;
+        margin: 10px 20px;
     }
     .link-container{
         width: 100%;
