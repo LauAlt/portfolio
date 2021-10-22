@@ -22,6 +22,15 @@ footer{
         margin: 20px 0;
         width: 36px;
         height: 36px;
+        
+    }
+    .img-certif{
+        transition: 1s ease-in-out;
+    }
+    .img-certif:hover,
+    .img-certif:focus,
+    .img-certif:active{
+        transform: scale(2);
     }
     p{ 
         width: 100%;

@@ -175,6 +175,15 @@ footer{
         margin: 20px 0;
         width: 36px;
         height: 36px;
+        
+    }
+    .img-logo{
+        transition: .3s ease-in;
+    }
+    .img-logo:hover, 
+    .img-logo:focus, 
+    .img-logo:active{
+        transform: rotate(360deg);
     }
     p{ 
         width: 100%;
