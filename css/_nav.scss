@@ -6,6 +6,7 @@ nav{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        z-index: 4;
         .ux,.frontend{
             padding: 6px 0;
             text-align: center;
@@ -37,4 +38,46 @@ nav{
     a{
         color: $negro;
     }
+    .kitty-ux{
+        visibility: visible;
+        transform: rotate(-10deg);
+    }
+    .kitty-dev{
+        visibility: visible;
+        transform: rotate(10deg);
+    }
+}
+
+.kitty-ux{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 160px;
+    height: 200px;
+    background-image: url('/img/cat-ufo-experience.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    
+}
+
+.kitty-dev{
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 200px;
+    background-image: url('/img/kitty-dev.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    
 }

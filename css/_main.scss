@@ -30,13 +30,42 @@ main{
     }
     .photo{
         text-align: center;
-
-        img{
-            position: relative;
-            object-fit: contain;
+        transition: 2s ease-in forwards;
+        .normal-mood{
+            display: inline-block;
             width:320px;
             min-width: 320px;
             max-width: 938px;
+            height: 320px;
+            min-height: 320px;
+            max-height: 938px;
+            background-size: contain;
+            background-image: url('/img/polaroid-1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            visibility: visible;
+        }
+        .sunnymood{
+            display: inline-block;
+            width:320px;
+            min-width: 320px;
+            max-width: 938px;
+            height: 320px;
+            min-height: 320px;
+            max-height: 938px;
+            background-size: contain;
+            background-image: url('/img/polaroid-2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            visibility: hidden;
+        }
+    }
+    .photo:hover, .photo:focus, .photo:active{
+        .normal-mood{
+            visibility: hidden;
+        }
+        .sunnymood{
+            visibility: visible;
         }
     }
 }
