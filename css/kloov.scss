@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap');
+@import "_setup.scss";
+@import "_footer.scss";
+
+$negro:#212121;
+$blanco:#ffffff;
+$amarillo:#faf670;
+$fuente:'Lato', sans-serif;
+$fuente2:'Kaushan Script', cursive;
+
+
+
+header{
+    width: 100%;
+    min-width: 320px;
+    height:auto;
+    margin: 80px 0;
+    background: $negro;
+    display:grid;
+    place-items: center ;
+    .header-container{
+        width: 300px;
+        max-width: 300px;
+        position: absolute;
+        left: calc(50% -60px);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        .cat-home{
+            width: 80px;
+            height: 50px;
+            cursor: pointer;
+            transition: .3s ease-in;
+        }
+        p{
+            margin-left: 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 1.2rem;
+            letter-spacing: 2px;
+            font-family: $fuente;
+            color: $blanco;
+            transition: transform .3s ease-in;
+        }
+    }
+}
+header img:hover, 
+header img:focus, 
+header img:active{
+    transform: rotate(360deg);
+}
+header p:hover, 
+header p:focus, 
+header p:active{
+    color: $amarillo;
+    transform: scale(0.9);
+}
+
+
+h1{
+    margin: 50px 0;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: 2px;
+    font-family: $fuente;
+    color: $blanco;
+}
+
+//  DISEÑO UI 
+.text-ribbon-2{
+    display: inline-block;
+    width: 2000px;
+    height: 60px;
+    background-image: url('/img/ribbon-diseño-ui.svg');
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: ribbon 10s linear infinite;
+}
+.list-designui{
+    margin: 2rem 0;
+    li{
+        width: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: space-evenly;
+        margin: 0 1rem;
+        cursor: pointer;
+        a{
+            font-style: italic;
+            text-align: left;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $blanco;
+        }
+        .eye{
+            visibility: hidden;
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            background-image: url('/img/ojo-1.gif');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+    }
+    li:hover{
+        a{
+            color: $amarillo;
+        }
+        .eye{
+            visibility: visible;
+        }
+    }
+
+}
+@keyframes ribbon{
+    from{
+        transform: translateX(-290px);
+    }
+    to{
+        transform: translateX(-20px);
+    }
+}
+
+.container{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text{
+        margin-top: 2rem;
+        width: 50%;
+        height: 200vh;
+        padding: 0 2rem ;
+        display: grid;
+        place-items: center;
+        p{
+            color: $blanco;
+            font-size: 2rem;
+            padding: 2rem;
+        }
+        .prototype-kloov{
+            padding:0;
+        }
+        
+    }
+    .galery{
+        width: 50%;
+        height:200vh;
+        padding:0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        .photo-1{
+            margin: 1rem;
+            display: inline-block;
+            width: 1000px;
+            height:1500px;
+            background-image: url('/img/kloov.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    
+}
+
+.ribbon-work-2{
+    display: inline-block;
+    width: 3000px;
+    height: 400px;
+    background-image: url('/img/ribbon-ri.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: ribbon-1 20s linear infinite;
+}
+@keyframes ribbon-1{
+    from{
+        transform: translateX(-1600px);
+    }
+    to{
+        transform: translateX(-8px);
+    }
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .rrss{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .github, .bh, .linkedin, .codepen{
+            margin:20px 16px ;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transition: transform .2s ease-in;
+        }
+    }
+    img{
+        margin: 20px 0;
+        width: 36px;
+        height: 36px;
+        
+    }
+    .img-logo{
+        transition: .3s ease-in;
+    }
+    .img-logo:hover, 
+    .img-logo:focus, 
+    .img-logo:active{
+        transform: rotate(360deg);
+    }
+    p{ 
+        width: 100%;
+        text-align: center;
+        color: $blanco;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+.github:hover, .github:focus, .github:active, 
+.bh:hover, .bh:focus, .bh:active,
+.linkedin:hover, .linkedin:focus, .linkedin:active,
+.codepen:hover, .codepen:focus, .codepen:active{
+    transform: scale(1.2);
+}
